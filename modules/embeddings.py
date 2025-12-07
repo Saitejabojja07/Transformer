@@ -78,7 +78,7 @@ class InputEmbeddings(nn.Module):
         return self.embeddings(x) * math.sqrt(self.d_model)
 
 
-class PositionEmbedding(nn.Module):
+class PositionalEncoding(nn.Module):
     """
     Adds sinusoidal positional encoding to token embeddings as described in
     "Attention Is All You Need" (Vaswani et al., 2017).
